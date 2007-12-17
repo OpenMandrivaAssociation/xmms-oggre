@@ -10,7 +10,6 @@ Release: %{release}
 Source0: http://prdownloads.sourceforge.net/my-xmms-plugs/%{oname}-%{version}.tar.bz2
 License: GPL
 Group: Sound
-BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libvorbis-devel 
 BuildRequires: libxmms-devel
 BuildRequires: automake1.4
