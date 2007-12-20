@@ -42,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc AUTHORS ChangeLog
-%_libdir/xmms/Output/liboggre.so
+%_libdir/xmms/Output/*
 
 
