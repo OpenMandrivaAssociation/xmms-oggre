@@ -1,7 +1,7 @@
 %define oname oggre
 %define name xmms-%oname
 %define version 0.3
-%define release %mkrel 7
+%define release %mkrel 8
 
 Summary: Ogg output plugin for xmms
 Name: %{name}
