@@ -1,14 +1,15 @@
 %define oname oggre
 %define name xmms-%oname
 %define version 0.3
-%define release %mkrel 8
+%define release %mkrel 9
 
 Summary: Ogg output plugin for xmms
 Name: %{name}
 Version: %{version}
 Release: %{release}
 Source0: http://prdownloads.sourceforge.net/my-xmms-plugs/%{oname}-%{version}.tar.bz2
-License: GPL
+Patch: oggre-0.3-linking.patch
+License: GPLv2+
 Group: Sound
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libvorbis-devel 
@@ -24,9 +25,12 @@ This xmms plugin writes Ogg Vorbis audio files to the hard disk.
 
 %prep
 %setup -q -n %oname-%version
+%patch -p1
 chmod 644 AUTHORS ChangeLog
-aclocal-1.4 -I macros
+libtoolize --install --force
+aclocal -I macros
 autoconf
+automake -a
 
 %build
 %configure2_5x
