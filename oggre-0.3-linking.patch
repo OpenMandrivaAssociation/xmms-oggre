@@ -1,0 +1,12 @@
+diff -p -up oggre-0.3/src/Makefile.am.linking oggre-0.3/src/Makefile.am
+--- oggre-0.3/src/Makefile.am.linking	2009-08-04 12:20:13.000000000 +0200
++++ oggre-0.3/src/Makefile.am	2009-08-04 12:20:38.000000000 +0200
+@@ -3,7 +3,7 @@ lib_LTLIBRARIES = liboggre.la
+ libdir = @XMMS_OUTPUT_PLUGIN_DIR@
+ 
+ liboggre_la_LDFLAGS = -module -avoid-version
+-liboggre_la_LIBADD = @GTK_LIBS@ @OGG_LIBS@ @VORBIS_LIBS@ @VORBISENC_LIBS@
++liboggre_la_LIBADD = @GTK_LIBS@ @OGG_LIBS@ @VORBIS_LIBS@ -lvorbisenc
+ liboggre_la_SOURCES= oggre.c
+ 
+ INCLUDES = @XMMS_CFLAGS@ @GTK_CFLAGS@ @OGG_CFLAGS@ @VORBIS_CFLAGS@
