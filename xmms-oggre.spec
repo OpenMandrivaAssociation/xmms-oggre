@@ -18,7 +18,7 @@ BuildRequires: automake1.4
 Requires: xmms
 Provides: oggre
 Obsoletes: oggre
-URL: http://sourceforge.net/projects/my-xmms-plugs/
+URL: https://sourceforge.net/projects/my-xmms-plugs/
 
 %description
 This xmms plugin writes Ogg Vorbis audio files to the hard disk.
