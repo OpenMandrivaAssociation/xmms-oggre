@@ -12,6 +12,9 @@ Patch: oggre-0.3-linking.patch
 License: GPLv2+
 Group: Sound
 BuildRoot: %{_tmppath}/%{name}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires: libvorbis-devel 
 BuildRequires: libxmms-devel
 BuildRequires: automake1.4
